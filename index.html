@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MineXII</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="client-info">
+        <img src="images/title.png" alt="App Icon" class="app-icon">
+        <div class="text-info">
+          <span class="logo">MineXII</span>
+          <span class="online-count">Web Edition</span>
+        </div>
+      </div>
+      <div class="user-info">
+        <span class="username">Playing on <strong>EAGLERCRAFT</strong></span>
+      </div>
+    </header>
+
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="cosmetics.html" class="nav-link">Cosmetics</a>
+      <a href="settings.html" class="nav-link">Settings</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+
+    <main class="main-content">
+      <div class="launch-section">
+        <img src="images/title.png" alt="Space Image" class="space-image">
+        <div class="launch-controls">
+          <select id="versionSelect" class="version-select">
+            <option value="1.8.9">1.8.9</option>
+            <option value="1.12.2">Eaglerforge</option>
+            <option value="1.16.5">1.9 Snapshot 0.5.0</option>
+          </select>
+          <button id="launchButton" class="launch-button">Launch</button>
+        </div>
+      </div>
+
+      <div class="feature-highlights">
+        <h2>News</h2>
+        <div class="highlight-container">
+          <div class="highlight">
+            <img src="images/feature1.png" alt="Feature 1" class="highlight-image">
+            <p class="highlight-description">Skyblock added to Zelznet</p>
+          </div>
+          <div class="highlight">
+            <img src="images/feature2.png" alt="Feature 2" class="highlight-image">
+            <p class="highlight-description">EaglercraftL 1.9 Discord Server: <a href="https://discord.gg/eSgHmBQGpQ">Discord</a></p>
+          </div>
+          <div class="highlight">
+            <img src="images/feature2.png" alt="Feature 2" class="highlight-image">
+            <p class="highlight-description">MineXII Github: <a href="https://discord.gg/eSgHmBQGpQ">Discord</a></p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="join-servers">
+      <h2>Join Servers</h2>
+      <div class="servers">
+        <button class="server-button" onclick="joinServer('hypixel')">ArchMC</button>
+        <button class="server-button" onclick="joinServer('mineplex')">Aspixel</button>
+        <button class="server-button" onclick="joinServer('cubecraft')">Zelznet</button>
+        <button class="server-button" onclick="joinServer('pvp-legacy')">Powercoord</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
